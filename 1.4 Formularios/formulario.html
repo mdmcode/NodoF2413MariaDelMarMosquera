@@ -4,11 +4,9 @@
         <title>Mi formulario</title>
     </head>
     <body>
-        <h1>
-            Ingresa tu información
-        </h1>
+        <h1>Ingresa tu información</h1>
         <fieldset>
-            <legend>Datos Personales</legend>
+            <legend>Contacto</legend>
             <label for="name">Nombre: </label>
             <input type="text" id="name" required autofocus>
             <br><br>
@@ -21,15 +19,15 @@
             <label for="phone-number">Número: </label>
             <input type="number" id="phone-number">
             <br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Otros</legend>
             <label for="gender">Sexo: </label>
             <select name="Sexo" id="gender">
                 <option value="Masc">Masculino</option>
                 <option value="Fem">Femenino</option>
                 <option value="Oth">Otro</option>
             </select>
-        </fieldset>
-        <fieldset>
-            <legend>Otros</legend>
             <label for="bdsp">Breve descripción de su persona: <br></label>
             <textarea name="desc" id="bdsp" cols="30" rows="10"></textarea>
         </fieldset>
