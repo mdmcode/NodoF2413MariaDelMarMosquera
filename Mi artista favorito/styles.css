@@ -1,0 +1,37 @@
+*{
+    font-family: 'Lato';
+    margin: 20px;
+}
+
+body{
+    background-color: rgb(193, 193, 193);
+}
+
+#discos{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    margin: 0 20px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+header{
+    text-align: center;
+}
+
+.Lana {
+    border-radius: 10px;
+}
+
+#Lanaimg{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
