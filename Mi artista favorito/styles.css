@@ -12,6 +12,10 @@ body{
     font-size: 100px;
 }
 
+h2{
+    font-family: 'Helvetica';
+}
+
 #discos{
     display: flex;
     flex-flow: row wrap;
@@ -22,8 +26,18 @@ body{
 }
 
 a{
-    color: black;
+    color: rgb(0, 0, 0);
     text-decoration: none;
+}
+
+a:hover{
+    color: brown;
+}
+
+a img:hover{
+    height: 230;
+    width: 230;
+    margin: 0;
 }
 
 header{
