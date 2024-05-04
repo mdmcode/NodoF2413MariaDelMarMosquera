@@ -1,0 +1,30 @@
+*{
+    font-family: 'Arial';
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset{
+    border-radius: 10px;
+}
+
+input, select, textarea{
+    border-radius: 5px;
+    border-width: 1px;
+}
+
+.normal{
+    margin: 5px 0;
+    width: 550px;
+    height: 20px;
+}
+
+.campos{
+    display: grid;
+    margin: 0 25px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 25px;
+}

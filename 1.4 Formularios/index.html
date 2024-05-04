@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de inscripción</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="text-align: center;">Formulario de inscripción</h1>
+    <form action="post">
+        <div class="campos">
+            <fieldset>
+                <legend>Datos personales</legend>
+                <label for="nombre">Nombre:</label>
+                <br>
+                <input type="text" name="nombre" id="nombre" class="normal" required placeholder="Ej: Pepito">
+                <br><br>
+                <label for="apellido">Apellido: </label>
+                <br>
+                <input type="text" name="apellido" id="apellido" class="normal" required placeholder="Ej: Pérez">
+                <br><br>
+                <label for="correo">Correo: </label>
+                <br>
+                <input type="email" name="correo" id="correo" class="normal" placeholder="Ej: pepitoperez@gmail.com">
+                <br><br>
+                <label for="dirección">Dirección: </label>
+                <br>
+                <input type="text" name="dirección" id="dirección" class="normal" placeholder="Ej: Av. Lugar Calle #1 Cra. 1 #1b">
+                <br><br>
+                <label for="departamento">Departamento: </label>
+                <br>
+                <input type="text" name="departamento" class="normal" placeholder="Ej: Chocó">
+                <br><br>
+                <label for="pais">País: </label>
+                <br>
+                <input type="text" name="país" id="país" class="normal" required placeholder="Ej: Colombia">
+                <br><br>
+                <label for="telefono">Teléfono: </label>
+                <br>
+                <input type="tel" name="telefono" id="telefono" class="normal" placeholder="Ej: 1234567890">
+                <br><br>
+                <label for="descripción">Descripción Personal: </label>
+                <br>
+                <textarea name="descripción" id="descripción" cols="80" rows="10" placeholder="Escriba una breve descripción de su persona..."></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Otros: </legend>
+                <label for="curso">¿A que carrera deseas inscribirte?</label>
+                <br>
+                <select name="carrera" id="carrera" class="normal" required>
+                    <option selected disabled>Seleccione una carrera</option>
+                    <option value="jobs to be done">Jobs to be done</option>
+                    <option value="cloud native">Cloud Native</option>
+                    <option value="frontend">Frontend</option>
+                    <option value="backend">Backend</option>
+                    <option value="fundamentals">Fundamentals</option>
+                    <option value="python">Python</option>
+                    <option value="marketing digital">Marketing Digital</option>
+                    <option value="fundamentals data">Fundamentals Data</option>
+                    <option value="introducción a java">Introducción a Java</option>
+                    <option value="gpt para principiantes">GPT para Principiantes</option>
+                    <option value="designops">Design Ops</option>
+                    <option value="bussiness analyst">Bussiness Analyst</option>
+                    <option value="flutter">Flutter</option>
+                </select>
+                <br><br>
+                <label for="modalidad">Modalidad</label>
+                <br>
+                <select name="modalidad" id="modalidad" class="normal" required>
+                    <option selected disabled>Seleccione una modalidad</option>
+                    <option value="presencial">Presencial</option>
+                    <option value="virtual">Virtual</option>
+                </select>
+                <br><br>
+                <label for="trabajando">¿Estás trabajando actualmente?</label><br>
+                <input type="checkbox" name="si" id="si">
+                <label for="si">Sí</label><br>
+                <input type="checkbox" name="no" id="no">
+                <label for="no">No</label><br><br>
+                <button type="reset">Reiniciar</button>
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </div>
+    </form>
+</body>
+</html>
