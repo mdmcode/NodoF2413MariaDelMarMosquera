@@ -1,7 +1,32 @@
 body{
     margin: 0;
-    font-family: 'Roboto';
+    font-family: 'Lato';
     background-color: azure;
+}
+
+header{
+    content: " ";
+    height: 200px;
+    display: grid;
+    grid-template-columns: 15% 80%;
+    column-gap: 5%;
+    align-items: center;
+    background-image: url("./coding.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2%;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 15% 80%;
+    column-gap: 5%;
+    margin: 2%;
+}
+
+button{
+    background: none;
+    border: none;
 }
 
 h1{
@@ -9,37 +34,101 @@ h1{
 }
 
 h3{
-    font-weight: light;
+    font-weight: 450;
 }
 
-header{
-    content: " ";
-    height: 200px;
+.mainInfo section h2{
+    text-align: center;
+}
+
+.sideInfo{
+    text-align: center;
+    border-right: 5px;
+    border-color: black;
+}
+
+.mainInfo{
     display: flex;
-    align-items: center;
-    background-image: url("./coding.jpeg");
+    flex-direction: column;
+    padding: 0 5%;
 }
 
 #perfil img{
     border-radius: 150px;
-    margin-left: 50px;
 }
 
+#perfil{
+    display: flex;
+    justify-content: center;
+}
 
+#redes{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
 
-@media screen and (max-width: 400px) {
+#redes img{
+    width: 30px;
+    height: 30px;
+}
+
+#titulo{
+    text-align: center;
+    font-size: 150%;
+}
+
+#nombre{
+    margin-bottom: 5px;
+}
+
+#cargo{
+    margin-top: 0;
+}
+
+/* Responsive */
+@media screen and (max-width: 800px) {
     header{
+        display: flex;
         align-items: center;
         justify-content: center;
         border-bottom-right-radius: 150px;
         border-bottom-left-radius: 150px;
     }
 
-    #perfil img{
-        margin: 0;
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
     }
+
+    ul{
+        display: none;
+    }
+
+    .sideInfo{
+        margin: 0 10%;
+    }
+
+    .mainInfo{
+        padding: 5%;
+    }
+
+    .mainInfo section p{
+            display: none;
+        }
     
-    .info{
-        text-align: center;
+    #titulo{
+        display: none;
+    }
+
+    #redes img{
+        width: 50px;
+        height: 50px;
+    }
+
+    #bio:hover ~ p{
+        display: inline;
     }
 }
