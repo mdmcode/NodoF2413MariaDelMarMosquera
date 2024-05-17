@@ -1,5 +1,6 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,79 +8,193 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/f4bb9a9028.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <div class="fondoLateral">
-        <div class="lateral">
-            <div id="perfil">
-                <img src="pfp.jpg" height="150" width="150">
-            </div>
-            <div id="infoPersonal">
-                <h2 id="nombre">María Del Mar Mosquera</h2>
-                <h3 id="cargo">Estudiante de Frontend</h3>
-            </div>
-            <hr>
-            <div id="contacto">
-                <h2 style="text-align: center;">Contacto</h2>
-                <ul>
-                    <a href="">
+    <div class="all">
+        <div class="fondoLateral">
+            <div class="lateral">
+                <div id="perfil">
+                    <img src="pfp.jpg" alt="profile picture" height="150" width="150">
+                </div>
+                <div id="infoPersonal">
+                    <h2 id="nombre">María Del Mar Mosquera</h2>
+                    <h3 id="cargo">Estudiante</h3>
+                </div>
+                <hr class="biografia">
+                <div class="biografia">
+                    <p style="text-align: center;">
+                        Soy una joven capaz y dispuesta a adquirir nuevas
+                        experiencias
+                    </p>
+                </div>
+                <hr>
+                <div id="contacto">
+                    <h2 style="text-align: center">Contacto</h2>
+                    <ul>
                         <li>
                             <span><i class="fa-solid fa-phone fa-beat"></i></span>
-                            <span>+57 123 456 7890</span>
+                            <span>+57 321 631 7699</span>
                         </li>
-                    </a>
-                    <a href="">
                         <li>
-                            <span><i class="fa-brands fa-instagram fa-beat"></i></span>
-                            <span>Instagram</span>
+                            <a href="https://www.instagram.com/_mdm_1026?igsh=bmNmbnZoM256bTg=" target="_blank">
+                                <span><i class="fa-brands fa-instagram fa-beat"></i></span>
+                                <span>Instagram</span>
+                            </a>
                         </li>
-                    </a>
-                    <a href="">
                         <li>
-                            <span><i class="fa-brands fa-linkedin fa-beat"></i></span>
-                            <span>Linkedin</span>
+                            <a href="#popup">
+                                <span><i class="fa-solid fa-at fa-beat"></i></span>
+                                <span>Correo</span>
+                            </a>
                         </li>
-                    </a>
-                    <a href="">
+                    </ul>
+                </div>
+                <hr>
+                <div id="otros">
+                    <ul>
                         <li>
-                            <span><i class="fa-solid fa-at fa-beat"></i></span>
-                            <span>Correo</span>
+                            <a href="https://es.wikipedia.org/wiki/Buenaventura_(Colombia)" target="_blank">
+                                <span><i class="fa-solid fa-location-dot"></i></span>
+                                <span>Buenaventura, Valle</span>
+                            </a>
                         </li>
-                    </a>
-                </ul>
+                        <li>
+                            <span><i class="fa-solid fa-cake-candles"></i></span>
+                            <span>Octubre 26 de 2008</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <hr>
-            <div id="educacion">
-                <h2 id="edu">Educación</h2>
-                <ul>
-                    <li>item</li>
-                    <li>item</li>
-                    <li>item</li>
-                </ul>
+            <div class="barrasLaterales">
+                <div class="barra" id="barra1"></div>
+                <div class="barra" id="barra2"></div>
+                <div class="barra" id="barra3"></div>
+            </div>
+        </div>
+        <div class="principal">
+            <div>
+                <h1 id="bio">Información Personal</h1>
+                <p id="parrafoBio">
+                    Soy María Del Mar Mosquera Caicedo, una joven apasionada por la
+                    tecnología y el arte. Actualmente tengo 15 años y soy estudiante del
+                    grado undécimo del Colegio Patricio Symes; hago parte del programa
+                    Microsoft TEALS y de la iniciativa Nation Builders Colombia.
+                </p>
+            </div>
+            <div class="secundario">
+                <div>
+                    <h2>Experiencia</h2>
+                    <p>
+                        A lo largo de mi vida he adquirido experiencias significativas con
+                        la tecnología y la programación. En el año 2023, comencé a hacer
+                        parte del programa Microsoft TEALS, en el cual he aprendido a usar
+                        el lenguaje de programación Python y la librería CMU Graphics para
+                        el desarrollo de videojuegos. Participé del Bootcamp 2023
+                        realizado por el Centro Educativo Bahía De Buenaventura en
+                        colaboración con Microsoft e hice parte del equipo campeón, lo que
+                        me permitió conocer la ciudad de Medellín y la Universidad EAFIT.
+                    </p>
+                    <ul>
+                        <li>
+                            <span><i class="fa-brands fa-python"></i></span>
+                            <span>Programación con Python</span>
+                        </li>
+                        <li>
+                            <span><i class="fa-solid fa-gears"></i></span>
+                            <span>Desarrollo de videojuegos</span>
+                        </li>
+                        <li>
+                            <span><i class="fa-solid fa-file-code"></i></span>
+                            <span>Desarrollo web Frontend</span>
+                        </li>
+                    </ul>
+                    <p>
+                        Actuamente estoy realizando un curso de Desarrollo Frontend en el
+                        programa Nodo de la Universidad EAFIT gracias a la empresa
+                        Amadeus, lo cual me permite adquirir nuevas experiencias.
+                    </p>
+                </div>
+                <div>
+                    <h2>Habilidades</h2>
+                    <p>
+                        Una de mis mayores habilidades es el aprendizaje, soy capaz de
+                        aprender muy rápido y retener mucha información. He aprovechado
+                        esta habilidad de aprender rápido para el aprendizaje de idiomas
+                        como el inglés, en el cual ya tengo un nivel de B2, y el alemán en
+                        el cual tengo un A2. Por último, tengo la capacidad de adaptarme
+                        al cambio, por lo que sé trabajar en distintos entornos y
+                        circunstancias.
+                    </p>
+                    <ul>
+                        <li>
+                            <span><i class="fa-solid fa-brain"></i></span>
+                            <span>Aprendizaje rápido</span>
+                        </li>
+                        <li>
+                            <span><i class="fa-solid fa-language"></i></span>
+                            <span>Idiomas</span>
+                        </li>
+                        <li>
+                            <span><i class="fa-solid fa-code-commit"></i></span>
+                            <span>Adaptabilidad</span>
+                        </li>
+                    </ul>
+                    <div class="lang">
+                        <h3>Lenguajes</h3>
+                        <h5>Español</h5>
+                        <div id="spanish" role="progressbar" style="width: 100%"></div>
+                        <h5>Inglés</h5>
+                        <div>
+                            <div id="english" role="progressbar" style="width: 80%"></div>
+                        </div>
+                        <h5>Alemán</h5>
+                        <div>
+                            <div id="german" role="progressbar" style="width: 15%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2>Educación</h2>
+                <p >
+                    He desarrollado mis estudios es distintas instituciones educativas a lo largo de 
+                    mi vida. Tengo el título de <strong>bachiller básico</strong> el cual obtuve
+                    en el Colegio Patricio Symes, colegio en el cual estoy estudiando para obtener
+                    el título de <strong>Bachiller Superior con Énfasis en Gestión Empresarial</strong>.
+                    Además he realizado cursos externos al colegio relacionados con la programación.
+                    Estoy certificada como programadora en Python Básico y estoy en el proceso de
+                    obtener la certificación de WOMCY Training Center en ciberseguridad.
+                    <ul>
+                        <li>
+                            <span><i class="fa-solid fa-graduation-cap"></i></span>
+                            <span>
+                                <b>Colegio Patricio Symes:</b> Bachilerato y Media Vocacional
+                            </span>
+                        </li>
+                        <li>
+                            <span><i class="fa-solid fa-laptop-code"></i></span>
+                            <span>
+                                <b>Cisco Skills For All:</b> Python Essentials 1 y 2.
+                            </span>
+                        </li>
+                        <li>
+                            <span><i class="fa-solid fa-award"></i></span>
+                            <span>
+                                <b>WOMCY Training Center:</b> Cibersecurity with Azure
+                            </span>
+                        </li>
+                    </ul>
+                </p>
             </div>
         </div>
     </div>
-    <div class="principal">
-        <div>
-            <h1 id="bio">Información Personal</h1>
-            <p id="parrafoBio">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam ipsam saepe atque dolore officia autem totam quaerat a harum veniam ut, ex reprehenderit, ducimus sequi voluptatibus facilis accusantium distinctio doloremque voluptates cupiditate ipsa? Harum sint labore nostrum dolorum itaque ratione, ipsum accusamus pariatur, voluptatibus quis explicabo repudiandae error eaque ab.</p>
+    <div id="popup" class="overlay">
+        <div id="popupBody">
+            <a href="#" id="close">&times;</a>
+            <h1>Mi correo electrónico es:</h1>
+            <h3 style="word-wrap: break-word;">mariadelmarmosqueracaicedo@gmail.com</h3>
         </div>
-        <div>
-            <h2 id="exp">Experiencia</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia rem esse adipisci accusamus nobis voluptatum, velit corrupti, explicabo corporis eius, laborum neque vitae perferendis placeat earum hic facilis voluptatem voluptas!</p>
-            <ul>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-            </ul>
-        </  div>
-</a>        <div>
-            <h2>Habilidades</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id esse, dolor maxime dolorum necessitatibus labore totam consequatur veritatis obcaecati a in ratione qui debitis dicta, eveniet, perferendis repudiandae. Magnam, ut?</p>
-            <ul>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-            </ul>
-        </  div>
-</a>    </div>
+    </div>
 </body>
+
 </html>

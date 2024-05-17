@@ -1,12 +1,21 @@
+html{
+    height: 100vh;
+}
+
 body{
-    display: grid;
-    grid-template-columns: 25% 75%;
     margin: 0;
     font-family: "Lato";
+    min-height: 100vh;
+    background: rgb(240, 241, 255);
 }
 
 hr{
     width: 80%;
+}
+
+h5{
+    margin-bottom: 5px;
+    margin-top: 10px;
 }
 
 a{
@@ -14,18 +23,34 @@ a{
     text-decoration: none;
 }
 
-a li{
-    padding: 5% 0;
+i{
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
-span i{
-    margin-right: 5px;
-}
-
-#contacto ul{
-    padding: 0;
-    margin-bottom: 5%;
+ul{
     list-style: none;
+}
+
+div ul{
+    padding-left: 0;
+    margin-bottom: 5%;
+}
+
+.all{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    margin: 0;
+    min-height: inherit;
+}
+
+.fondoLateral{
+    content: " ";
+    height: 100%;
+    background: linear-gradient(rgb(0, 19, 185), rgb(0, 0, 73)) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .lateral{
@@ -34,19 +59,57 @@ span i{
     justify-content: start;
     align-items: center;
     color: azure;
-    padding: 5%;
     text-wrap: wrap;
+    padding: 5%;
 }
 
-.fondoLateral{
-    content: " ";
-    height: 100%;
-    background-color: rgb(21, 0, 141);
+.barrasLaterales{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 15px;
+    height: 50%;
+    padding: 5%;
+    padding-bottom: 0;
+}
+
+.barra{
+    background-color: rgb(43, 71, 255);
+    height: 5px;
+    align-self: end;
+}
+
+.biografia{
+    display: none;
 }
 
 .principal{
     padding: 5%;
 }
+
+.secundario{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5%;
+}
+
+/* Crea el efecto del fondo para que la ventana sobresalga */
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
 
 .principal h2{
     transition-property: font-size;
@@ -76,13 +139,65 @@ span i{
     font-size: 34px;
 }
 
+.lateral li{
+    padding: 5% 0;
+}
+
+.secundario p{
+    text-align: justify;
+}
+
+.principal li{
+    padding: 10px 0;
+}
+
+.lang div{
+    height: 20px;
+    background-color: gainsboro;
+    margin-bottom: 10px;
+    padding-left: 2.5px;
+    padding-top: 2.5px;
+}
+
+.lang div div{
+    height: 15px;
+    background-color: rgb(0, 153, 255);
+}
+
+/* Estilos del contenido de la ventana emergente */
+#popupBody{
+    width: 46%;
+    padding: 2%;
+    border-radius: 15px;
+    box-shadow: 0 0 5px #CCC;
+    background: #FFF;
+    position: relative;
+    transition: all 2s ease-in-out;
+    margin: 20% auto;
+}
+
+/* Estilos del botón de cierre de la ventana emergente */
+#close{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#spanish{
+    height: 15px;
+    background-color: rgb(0, 153, 255);
+    border: 3px solid gainsboro;
+}
 
 #perfil{
     padding: 10% 0;
-}
-
-#perfil img{
-    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #nombre{
@@ -91,53 +206,134 @@ span i{
 
 #cargo{
     margin-top: 0;
+    font-weight: 400;
 }
 
 #infoPersonal{
     text-align: center;
 }
 
-@media screen and (max-width: 750px) {
-    title{
-        content: "Tarjeta de presentación";
-    }
+#barra1{
+    animation-name: barra1;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
 
-    body{
+#barra2{
+    animation-name: barra2;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+#barra3{
+    animation-name: barra3;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+#perfil img{
+    border-radius: 100%;
+}
+
+#contacto h2{
+    transition-property: font-size;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    font-size: 24px;
+}
+
+#contacto h2:hover{
+    transition-property: font-size;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 750px) {
+    .all{
         display: flex;
         flex-direction: column;
+    }
+
+    .biografia{
+        display: block;
     }
 
     .principal{
         display: none;
     }
-
+    
     .fondoLateral{
-        height: 20%;
-        position: relative;
+        height: 150px;
     }
-
+    
     .lateral{
         display: flex;
         flex-direction: column;
+        justify-content: start;
         width: 200px;
         row-gap: 10px;
         color: black;
-        justify-content: center;
         position: absolute;
         left: 50%;
         transform: translate(-50%);
     }
 
+    .barrasLaterales{
+        display: none;
+    }
+    
     #infoPersonal{
         font-size: 80%;
+    }
+    
+    #otros{
+        display: none;
     }
 
     #perfil{
         padding-bottom: 0;
     }
-
+    
     #perfil img{
         width: 100%;
         height: 100%;
+    }
+}
+
+/* Animación de las barras laterales */
+@keyframes barra1 {
+    from{
+        height: 5px;
+    }
+
+    to{
+        height: 70%;
+    }
+}
+
+@keyframes barra2 {
+    from{
+        height: 5px;
+    }
+
+    to{
+        height: 100%;
+    }
+}
+
+@keyframes barra3 {
+    from{
+        height: 5px;
+    }
+
+    to{
+        height: 40%;
     }
 }
