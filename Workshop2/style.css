@@ -239,6 +239,7 @@ div ul{
 
 #perfil img{
     border-radius: 100%;
+    object-fit: cover;
 }
 
 #contacto h2{
