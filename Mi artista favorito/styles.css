@@ -7,22 +7,12 @@ body{
     background-color: rgb(193, 193, 193);
 }
 
-#titulo{
-    font-family: 'Rainbow';
-    font-size: 100px;
-}
-
 h2{
     font-family: 'Helvetica';
 }
 
-#discos{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+header{
     text-align: center;
-    align-items: center;
-    margin: 0 20px;
 }
 
 a{
@@ -40,12 +30,22 @@ a img:hover{
     margin: 0;
 }
 
-header{
-    text-align: center;
-}
-
 .Lana {
     border-radius: 10px;
+}
+
+#titulo{
+    font-family: 'Rainbow';
+    font-size: 100px;
+}
+
+#discos{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    margin: 0 20px;
 }
 
 #Lanaimg{
